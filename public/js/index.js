@@ -3,7 +3,7 @@ import API from "/js/api.js";
 // Get references to page elements
 const exampleTextEl = document.getElementById("example-text");
 const exampleDescriptionEl = document.getElementById("example-description");
-const submitBtnEl = document.getElementById("submit");
+const postBtnEl = document.getElementById("postButton");
 const exampleListEl = document.getElementById("example-list");
 
 // refreshExamples gets new examples from the db and repopulates the list
@@ -68,7 +68,7 @@ const handleDeleteBtnClick = function(event) {
 };
 
 // Add event listeners to the submit and delete buttons
-submitBtnEl.addEventListener("click", handleFormSubmit);
+postBtnEl.addEventListener("click", handleFormSubmit);
 document.querySelectorAll(".delete").forEach(btn => {
   btn.addEventListener("click", handleDeleteBtnClick);
 });
