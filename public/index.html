@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Bloggify</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
-    <div class="ui equal width center aligned padded grid">
-<div class="purple column">
-  <h1>Bloggify</h1>
-</div>
+<head>
+  <meta charset="UTF-8">
+  <title>Bloggify</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="ui equal width center aligned padded grid">
+    <div class="purple column">
+      <h1>Bloggify</h1>
     </div>
-    <div class="ui container">
-          <div class="row">
-            <div class="ui card">
-              <div class="image">
-                <img src="https://via.placeholder.com/150">User Name here
-              </div>
-              <div class="content">
-              
-                <div class="meta">
-                
-                </div>
-                <div class="description">
-                
-                </div>
-              </div>
-            </div>
- 
-</div>
+  </div>
+  <div class="ui container">
+    <div class="row">
+      <div class="ui card">
+        <div class="image">
+          <img src="https://via.placeholder.com/150">User Name here
+        </div>
+        <div class="content">
+          <div class="meta">
           </div>
-          <br>
-          <h2 class="ui blue header">What's on your mind?</h2>
-          <textarea class="form-control" rows="3" id="chirp-box" placeholder="Enter Post Here!"></textarea>
-          <button class="ui teal button">Bloggify IT!</button>
+          <div class="description">
+          </div>
         </div>
       </div>
-
-      <div class="row">
-        <div>
-          <h2>Posts</h2>
-          <hr>
-          <div></div>
-        </div>
-      </div>
-
     </div>
+  </div>
+  <br>
+  <h2 class="ui blue header">What's on your mind?</h2>
+  <div class="ui fluid action input">
+    <input type="text" id="chirp-box" placeholder="Enter your post here">
+  <button id="postButton" class="ui teal button">Bloggify IT!</button>
+  </div>
 
-  <script type="text/javascript" src="js/chirp.js"></script>
-  </body>
+  <div class="row">
+    <div>
+      <h2>Posts</h2>
+      <hr>
+      <div id="posts">
+      <div id="title">
+        <h1>My Day</h1>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
 </html>
