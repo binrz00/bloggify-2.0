@@ -1,77 +1,82 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
   <meta charset="UTF-8">
   <title>Bloggify</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
+
 <body>
   <div class="ui equal width center aligned padded grid">
-    
+
     <div class="column title">
       <h1>Bloggify</h1>
       <div class="ui secondary menu navbar">
-        <a class="item button" id= "navbar">
-         Home
+        <a class="item button" id="navbar">
+          Home
         </a>
-        <a class="item button" id= "navbar">
+        <a class="item button" id="navbar">
           Create
         </a>
-        <a class="item button" id= "navbar">
+        <a class="item button" id="navbar">
           Archive
         </a>
         <div class="right menu">
           <div class="item">
             <a class="ui item button" id="navbar">
               Log-in / Sign Up
-              </a>
-            </div>
+            </a>
           </div>
-          
-          </a>
         </div>
       </div>
     </div>
   </div>
   <div class="ui container">
-  <h2 class="ui blue header">What's on your mind?</h2>
-  <div class="ui fluid action input">
-    <input type="text" id="chirp-box" placeholder="Enter your post here">
-  <button id="postButton" class="ui teal button">Bloggify IT!</button>
-  </div>
+    <h2 class="ui blue header">What's on your mind?</h2>
+    <div class="ui fluid action input">
+      <input type="text" id="post-title" placeholder="Enter a title here">
+    </div>
+    <div class="ui form">
+      <div class="field">
+        <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+      </div>
+    <div class="row">
+      <div>
+        <h2 class="ui blue header">Posts</h2>
+        <div class="ui vertically divided grid">
+          <div class="row">
+            <div class=" center aligned left floated sixteen wide column">
+              <h1 class="post-title">My Day</h1>
+            </div>
 
-  <div class="row">
-    <div>
-      <h2 class="ui blue header">Posts</h2>
-      
-      <div class="ui vertically divided grid">
-        <div class="row">
-          <div class=" center aligned left floated sixteen wide column">
-            <h1>My Day</h1>
           </div>
-          
-        </div>
-        <div class="row">
-<div class="left floated eleven wide column">
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-</div>
-<div class="right floated three wide column">
-  <div class="ui small image">
-    <img src="https://via.placeholder.com/100">
-  </div>
+          <div class="row">
+            <div class="left floated eleven wide column">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="right floated three wide column">
+              <div class="ui small image">
+                <img src="https://via.placeholder.com/100">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="left floated three wide column">
+              <h5>binrz00</h5>
+            </div>
+            <div class="right floated one wide column">
+              <p>3:00PM</p>
+            </div>
           </div>
         </div>
-  <div class="row">
-    <div class="left floated three wide column">
-<h5>binrz00</h5>
-    </div>
-    <div class="right floated one wide column">
-     <p>3:00PM</p> 
-    </div>
-  </div>
-  </div>
-  <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
