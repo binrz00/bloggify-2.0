@@ -6,4 +6,6 @@ module.exports = function(sequelize, DataTypes) {
     body: DataTypes.STRING
   });
   return Blog;
+
 };
+
