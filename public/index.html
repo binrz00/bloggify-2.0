@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Bloggify</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
   <div class="ui equal width center aligned padded grid">
@@ -13,21 +13,6 @@
     </div>
   </div>
   <div class="ui container">
-    <div class="row">
-      <div class="ui card">
-        <div class="image">
-          <img src="https://via.placeholder.com/150">User Name here
-        </div>
-        <div class="content">
-          <div class="meta">
-          </div>
-          <div class="description">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br>
   <h2 class="ui blue header">What's on your mind?</h2>
   <div class="ui fluid action input">
     <input type="text" id="chirp-box" placeholder="Enter your post here">
@@ -36,18 +21,34 @@
 
   <div class="row">
     <div>
-      <h2>Posts</h2>
-      <hr>
-      <div id="posts">
-      <div id="title">
-        <h1>My Day</h1>
-      </div>
-      </div>
+      <h2 class="ui blue header">Posts</h2>
+      
+      <div class="ui vertically divided grid">
+        <div class="row">
+          <div class=" center aligned left floated sixteen wide column">
+            <h1>My Day</h1>
+          </div>
+          
+        </div>
+        <div class="row">
+<div class="left floated eleven wide column">
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+<div class="right floated three wide column">
+  <div class="ui small image">
+    <img src="https://via.placeholder.com/100">
+  </div>
+          </div>
+        </div>
+  <div class="row">
+    <div class="left floated three wide column">
+<h5>binrz00</h5>
+    </div>
+    <div class="right floated one wide column">
+     <p>3:00PM</p> 
     </div>
   </div>
-
   </div>
-
   <script type="text/javascript" src="js/index.js"></script>
 </body>
 
