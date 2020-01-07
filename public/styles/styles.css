@@ -1,53 +1,31 @@
+.title {
+  background-color: #c06014;
+}
+h1 {
+  color: whitesmoke;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
 
+#navbar {
+  color: whitesmoke;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
 
+a:hover {
+  background-color: black !important;
+  opacity: 0.75;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+body {
+  background-color: #eddbcd;
+}
 
 .vertically{
   border: 1px solid #dededf;
+
 }
 
