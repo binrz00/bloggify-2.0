@@ -22,8 +22,8 @@ h1 {
   font-size: 18px;
 }
 
-a:hover {
-  background-color: black !important;
+#navbar:hover {
+  background-color: black;
 }
 
 body {
@@ -46,12 +46,18 @@ cursor: pointer;
 .credits {
   text-align: center;
 }
-.post-title{
-  color:black;
-}
 .wrapper{
   min-height: 100%;
 }
 .push{
   height: 50px;
+}
+footer{
+  background-color: rgb(219, 185, 100);
+  color: black;
+  border-top: solid 4px blanchedalmond;
+}
+.random{
+  position: relative;
+  left: 15%;
 }
