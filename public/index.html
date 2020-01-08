@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Bloggify</title>
+  <title>Bloggify 2.0</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
@@ -10,9 +10,11 @@
   <div class="ui equal width center aligned padded grid">
     
     <div class="column title">
-      <h1>Bloggify</h1>
+      
+      <img class = "logo" src="Assets/images/Bloggify Alt Logo.png"></img>
+    
       <div class="ui secondary menu navbar">
-        <a class="item button" id= "navbar">
+        <!-- <a class="item button" id= "navbar">
          Home
         </a>
         <a class="item button" id= "navbar">
@@ -20,10 +22,10 @@
         </a>
         <a class="item button" id= "navbar">
           Archive
-        </a>
+        </a> -->
         <div class="right menu">
           <div class="item">
-            <a class="ui item button" id="navbar">
+            <a class="ui item button" href="login.html" id="navbar">
               Log-in / Sign Up
               </a>
             </div>
@@ -34,13 +36,14 @@
       </div>
     </div>
   </div>
+  <br>
   <div class="ui container">
-  <h2 class="ui blue header">What's on your mind?</h2>
+  <h2 class="ui header">What's on your mind?</h2>
   <div class="ui fluid action input">
     <input type="text" id="chirp-box" placeholder="Enter your post here">
-  <button id="postButton" class="ui teal button">Bloggify IT!</button>
+  <button id="postButton" class="ui gray button">Post</button>
   </div>
-
+<br>
   <div class="row">
     <div>
       <h2 class="ui blue header">Posts</h2>
@@ -48,7 +51,7 @@
       <div class="ui vertically divided grid">
         <div class="row">
           <div class=" center aligned left floated sixteen wide column">
-            <h1>My Day</h1>
+            <h1 class= "post-title">My Day</h1>
           </div>
           
         </div>
@@ -71,6 +74,7 @@
     </div>
   </div>
   </div>
+  <div class = "credits">Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
   <script type="text/javascript" src="js/index.js"></script>
 </body>
 
