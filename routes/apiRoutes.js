@@ -41,7 +41,14 @@ module.exports = {
         res.redirect("/api/blogs");
       });
     });
-    // Delete an blog by id
+
+    // Route the new blog
+
+    // app.get("/api/blogs/new", function(req, res){
+    //   res.render(ROUTE TO HTML FILE WITH THE NEW BLOG FORMS)
+    // });
+
+    // Delete a blog by id
     app.delete("/api/blogs/:id", function(req, res) {
       db.Blog.destroy({ where: { id: req.params.id } }).then(function(dbBlog) {
         res.json(dbBlog);
