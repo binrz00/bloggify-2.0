@@ -1,12 +1,18 @@
 import API from "/js/api.js";
+import { doc } from "prettier";
 
 // Get references to page elements
 const exampleTextEl = document.getElementById("example-text");
 const exampleDescriptionEl = document.getElementById("example-description");
 const postBtnEl = document.getElementById("postButton");
 const exampleListEl = document.getElementById("example-list");
+const password = document.getElementById("password");
+const userName = document.getElementById("userName");
+const loginSubmit = document.getElementById("login-submit");
+ const title = document.getElementById("post-title");
+ const content = document.getElementById("post-content");
 
-// refreshExamples gets new examples from the db and repopulates the list
+//refreshExamples gets new examples from the db and repopulates the list
 const refreshExamples = function() {
   API.getExamples().then(function(data) {
     const exampleEls = data.map(function(example) {

@@ -1,38 +1,44 @@
 const db = require("../models");
 
 module.exports = {
-  postExampleApi: async function(req, res) {
+  postBlogifyApi: async function(req, res) {
     const dbBlog = await db.Blog.create(req.body);
     res.json(dbBlog);
   },
   api: function(app) {
-    // Get all examples
-    app.get("/api/examples", function(req, res) {
-      db.Example.findAll({}).then(function(dbExamples) {
-        res.json(dbExamples);
+    // Get all blogs
+    app.get("/api/blogs", function(req, res) {
+      db.Blog.findAll({}).then(function(dbBlogs) {
+        res.json(dbBlogs);
       });
     });
 
-    // Get an example
-    app.get("/api/examples/:id", function(req, res) {
+    // Get a blog
+    app.get("/api/blogs/:id", function(req, res) {
       console.log({ id: req.params.id });
-      db.Example.findAll({ where: { id: req.params.id } }).then(function(
-        dbExamples
-      ) {
-        console.log(dbExamples);
-        res.json(dbExamples[0]);
+      db.Blog.findAll({ where: { id: req.params.id } }).then(function(dbBlogs) {
+        console.log(dbBlogs);
+        res.json(dbBlogs[0]);
       });
     });
 
-    // Create a new example
-    app.post("/api/examples", this.postExampleApi);
+    // Update a blog post
+    // app.put("/api/blogs/:id", function(req, res) {
+    //   console.log({ id: req.params.id });
+    //   db.Blog.findAll({where: { id: req.params.id } }).then(function(
+    //     dbBlogs
+    //   ) {
+    //     console.log(dbBlogs);
+    //   })
+    // })
 
-    // Delete an example by id
-    app.delete("/api/examples/:id", function(req, res) {
-      db.Example.destroy({ where: { id: req.params.id } }).then(function(
-        dbExample
-      ) {
-        res.json(dbExample);
+    // Create a new blog
+    app.post("/api/blogs", this.postBlogifyApi);
+
+    // Delete an blog by id
+    app.delete("/api/blogs/:id", function(req, res) {
+      db.Blog.destroy({ where: { id: req.params.id } }).then(function(dbBlog) {
+        res.json(dbBlog);
       });
     });
   }
