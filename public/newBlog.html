@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bloggify 2.0 login</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="ui equal width center aligned padded grid">
+            <div class="column title">
+                <img class="logo" src="Assets/images/Bloggify Alt Logo.png"></img>
+                <div class="ui secondary menu navbar">
+                    <div class="right menu">
+                        <div class="item">
+                            <a href="index.html" class="ui item button" id="navbar">
+                                Home
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right menu">
+                        <div class="item">
+                            <a href="newBlog.html" class="ui item button" id="navbar">
+                                New Post
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right menu">
+                        <div class="item">
+                            <a href="login.html" class="ui item button" id="navbar">
+                                Log-in / Sign Up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h2 class="ui header">What's on your mind?</h2>
+        <form class="ui form" action="/blogs" method="POST">
+            <div class="field">
+                <h3>Title</h3>
+                <input type="text" name="blog[title]" placeholder="Enter a title here">
+            </div>
+            <div class="field">
+                <h3>Image</h3>
+                <input type="text" name="blog[image]" placeholder="Enter an image url here">
+            </div>
+            <div class="field">
+                <h3>Blog</h3>
+                <textarea name="blog[body]" placeholder="What's on your mind?"></textarea>
+            </div>
+            <div class="ui grid">
+                <div class="right floated one wide column" id="postButton">
+                    <i class="pencil alternate icon"></i>Post
+                </div>
+        </form>
+        <div class="push"></div>
+    </div>
+    <footer class="credits">Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a>
+        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></footer>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

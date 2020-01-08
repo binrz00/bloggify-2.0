@@ -34,16 +34,15 @@ body {
   border: 1px solid #cfbfb4;
   border-radius: 3px;
 }
-
+#postButton:hover{
+cursor: pointer;
+}
 
 .post-title {
   color: black;
   font-size: 35px;
 }
-#postButton:hover {
-  background-color: black;
-  color: whitesmoke;
-}
+
 .credits {
   text-align: center;
 }
