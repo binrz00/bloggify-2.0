@@ -44,9 +44,17 @@ module.exports = {
 
     // Route the new blog
 
-    // app.get("/api/blogs/new", function(req, res){
-    //   res.render(ROUTE TO HTML FILE WITH THE NEW BLOG FORMS)
-    // });
+    app.get("/api/blogs/new", function(req, res) {
+      res.render("new.html"); // path is likely going to need to change
+    });
+
+    // Create a route for the editing form
+    app.get("/api/blogs/:id/edit", function(req, res) {
+      db.Blog.findOne({ where: { id: req.params.id } }).then(function(dbBlogs) {
+        console.log(dbBlogs);
+        res.render("edit.html"); // path is likely going to need to change
+      });
+    });
 
     // Delete a blog by id
     app.delete("/api/blogs/:id", function(req, res) {
