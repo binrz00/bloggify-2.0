@@ -24,6 +24,7 @@ h1 {
 
 a:hover {
   background-color: black !important;
+  color: white !important;
 }
 
 body {
@@ -34,8 +35,8 @@ body {
   border: 1px solid #cfbfb4;
   border-radius: 3px;
 }
-#postButton:hover{
-cursor: pointer;
+#postButton:hover {
+  cursor: pointer;
 }
 
 .post-title {
@@ -46,12 +47,28 @@ cursor: pointer;
 .credits {
   text-align: center;
 }
-.post-title{
-  color:black;
+.post-title {
+  color: black;
 }
-.wrapper{
+.wrapper {
   min-height: 100%;
 }
-.push{
+.push {
   height: 50px;
+}
+
+#login-submit {
+  background-color: #c06014;
+  color: white;
+}
+
+#login-submit:hover {
+  background-color: black;
+  color: white;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
