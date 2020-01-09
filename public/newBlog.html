@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Bloggify 2.0 login</title>
+    <title>Bloggify 2.0 Blog Post</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
@@ -40,7 +40,10 @@
             </div>
         </div>
         <br>
-        <h2 class="ui header">What's on your mind?</h2>
+        
+        <div class="ui center aligned grid">
+            <div class="left aligned fourteen wide column">
+                <h2 class="ui header">What's on your mind?</h2>
         <form class="ui form" action="/blogs" method="POST">
             <div class="field">
                 <h3>Title</h3>
@@ -52,13 +55,14 @@
             </div>
             <div class="field">
                 <h3>Blog</h3>
-                <textarea name="blog[body]" placeholder="What's on your mind?"></textarea>
+                <textarea rows="15" name="blog[body]" placeholder="What's on your mind?"></textarea>
             </div>
             <div class="ui grid">
                 <div class="right floated one wide column" id="postButton">
                     <i class="pencil alternate icon"></i>Post
                 </div>
         </form>
+        </div>
         <div class="push"></div>
     </div>
     <div class = "foot is-flex-touch">
@@ -72,6 +76,7 @@
     <footer class = "credits">Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </footer>
     <script type="text/javascript" src="js/index.js"></script>
+
 </body>
 
 </html>
