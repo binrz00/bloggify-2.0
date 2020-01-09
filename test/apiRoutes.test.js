@@ -20,7 +20,7 @@ describe("API - ROUTES", () => {
       json: jest.fn()
     };
 
-    await apiRoutes.postBlogifyApi(req, res);
+    await apiRoutes.postExampleApi(req, res);
     expect(res.json.mock.calls[0][0].title).toBe(req.body.title);
     expect(res.json.mock.calls[0][0].body).toBe(req.body.body);
   });

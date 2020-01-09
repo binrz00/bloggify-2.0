@@ -1,65 +1,74 @@
 const db = require("../models");
+
 module.exports = {
-  postBlogifyApi: async function(req, res) {
+  postExampleApi: async function(req, res) {
     const dbBlog = await db.Blog.create(req.body);
     res.json(dbBlog);
   },
   api: function(app) {
-    // Get all blogs
-    app.get("/api/blogs", function(req, res) {
-      db.Blog.findAll({}).then(function(dbBlogs) {
-        res.json(dbBlogs);
-      });
+    // REROUTE TO /BLOGS
+    app.get("/", (req, res) => {
+      res.redirect("/blogs");
     });
-    // Get a blog
-    app.get("/api/blogs/:id", function(req, res) {
-      console.log({ id: req.params.id });
-      db.Blog.findAll({ where: { id: req.params.id } }).then(function(dbBlogs) {
-        console.log(dbBlogs);
-        res.json(dbBlogs[0]);
-      });
-    });
-    // Update a blog post
-    app.put("/api/blogs/:id", function(req, res) {
-      console.log({ id: req.params.id });
-      db.Blog.update(
-        {
-          image: req.body.blog.image,
-          title: req.body.blog.title,
-          body: req.body.blog.body
-        },
-        { where: { id: req.params.id } }
-      ).then(function(dbBlogs) {
-        console.log(dbBlogs);
-      });
-    });
-    // Create a new blog
-    app.post("/api/blogs", function(req, res) {
-      db.Blog.create(req.body.blog).then(function(dbBlogs) {
-        console.log(dbBlogs);
-        res.json(dbBlogs);
-        res.redirect("/api/blogs");
+
+    // GET ROUTE FOR THE HOME PAGE WITH ALL THE BLOGS IN THE DB
+    app.get("/blogs", (req, res) => {
+      db.Blog.findAll({}).then(blogs => {
+        res.render("index", { blogs: blogs });
       });
     });
 
-    // Route the new blog
-
-    app.get("/api/blogs/new", function(req, res) {
-      res.render("new.html"); // path is likely going to need to change
-    });
-
-    // Create a route for the editing form
-    app.get("/api/blogs/:id/edit", function(req, res) {
-      db.Blog.findOne({ where: { id: req.params.id } }).then(function(dbBlogs) {
-        console.log(dbBlogs);
-        res.render("edit.html"); // path is likely going to need to change
+    // CREATE ROUTE
+    app.post("/blogs", (req, res) => {
+      req.body.blog.body = req.sanitize(req.body.blog.body);
+      db.Blog.create({
+        title: req.body.blog.title,
+        image: req.body.blog.image,
+        body: req.body.blog.body
+      }).then(() => {
+        res.redirect("/blogs");
       });
     });
 
-    // Delete a blog by id
-    app.delete("/api/blogs/:id", function(req, res) {
-      db.Blog.destroy({ where: { id: req.params.id } }).then(function(dbBlog) {
-        res.json(dbBlog);
+    // NEW ROUTE FOR CREATING A NEW BLOG POST
+    app.get("/blogs/new", (req, res) => {
+      res.render("new");
+    });
+
+    // SHOW ROUTE
+    app.get("/blogs/:id", (req, res) => {
+      db.Blog.findOne({ where: { id: req.params.id } }).then(foundBlog => {
+        res.render("show", { blog: foundBlog });
+      });
+    });
+
+    // EDIT ROUTE
+    app.get("/blogs/:id/edit", (req, res) => {
+      db.Blog.findOne({ where: { id: req.params.id } }).then(foundBlog => {
+        res.render("edit", { blog: foundBlog });
+      });
+    });
+
+    // UPDATE ROUTE
+    app.put("/blogs/:id", (req, res) => {
+      req.body.blog.body = req.sanitize(req.body.blog.body);
+      db.Blog.findOne({ where: { id: req.params.id } }).then(updatedBlog => {
+        updatedBlog
+          .update({
+            title: req.body.blog.title,
+            image: req.body.blog.image,
+            body: req.body.blog.body
+          })
+          .then(() => {
+            res.redirect("/blogs");
+          });
+      });
+    });
+
+    // DESTROY ROUTE
+    app.delete("/blogs/:id", (req, res) => {
+      db.Blog.destroy({ where: { id: req.params.id } }).then(() => {
+        res.redirect("/");
       });
     });
   }
