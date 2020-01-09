@@ -22,6 +22,7 @@ module.exports = {
     app.post("/blogs", (req, res) => {
       req.body.blog.body = req.sanitize(req.body.blog.body);
       db.Blog.create({
+        author: req.body.blog.author,
         title: req.body.blog.title,
         image: req.body.blog.image,
         body: req.body.blog.body
@@ -33,6 +34,14 @@ module.exports = {
     // NEW ROUTE FOR CREATING A NEW BLOG POST
     app.get("/blogs/new", (req, res) => {
       res.render("new");
+    });
+    //new route for logging in
+    app.get("/login", (req, res) => {
+      res.render("login");
+    });
+    //new route for signing up
+    app.get("/signup", (req, res) => {
+      res.render("signup");
     });
 
     // SHOW ROUTE
@@ -55,6 +64,7 @@ module.exports = {
       db.Blog.findOne({ where: { id: req.params.id } }).then(updatedBlog => {
         updatedBlog
           .update({
+            author: req.body.blog.author,
             title: req.body.blog.title,
             image: req.body.blog.image,
             body: req.body.blog.body
