@@ -1,12 +1,14 @@
 # Bloggify 2.0 App
 
+An user-authenticated application to write, store, and delete blog posts that utilizes MySQL, EJS, Node, Sequelize, Husky, & Lint.
+
 # Getting Started
 
 # Prerequisites
 
 This application uses the following NPMs:
 
-fs, sequelize, path, ejs
+fs, sequelize, path, ejs.
 
 # Installing
 You must also have node.js and perform a npm install to bring in all the necessary node modules. 
@@ -29,6 +31,8 @@ The application is deployed via Heroku: (**link to be added**)
 # Built With
 Semantic UI - The web framework used
 <br>
+Canva - Graphic Design Tool for our App Logo
+<br>
 Google Fonts - Primary font scheme for our UI
 <br>
 Flat Icon - Interactive icon elements for our UI
@@ -47,6 +51,10 @@ Front End Team: Brian Z. and Mark M.
 Back End Team: Elliot T. and Max M.
 <br>
 Our Instructor and TAs with Trilogy Education Services Coding Bootcamp assisted us with troubleshooting.
+
+# Challenges
+Back End: Tasks requiring the most troubleshooting included both ensuring the API routes and MySQL database interacted successfully and, once the application ran successfully, incorporating user authentication.
+
 
 # Versioning
 Our team didn't use versioning for this project, per se. However, we did collaborate via GitHub branching.
