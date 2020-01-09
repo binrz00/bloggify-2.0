@@ -34,8 +34,8 @@ body {
   border: 1px solid #cfbfb4;
   border-radius: 3px;
 }
-#postButton:hover{
-cursor: pointer;
+#postButton:hover {
+  cursor: pointer;
 }
 
 .post-title {
@@ -46,11 +46,31 @@ cursor: pointer;
 .credits {
   text-align: center;
 }
+.post-title {
+  color: black;
+}
+
 .wrapper{
   min-height: 100%;
 }
-.push{
+.push {
   height: 50px;
+}
+
+#login-submit {
+  background-color: #c06014;
+  color: white;
+}
+
+#login-submit:hover {
+  background-color: black;
+  color: white;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer{
   background-color: rgb(219, 185, 100);
