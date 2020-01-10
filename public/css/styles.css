@@ -48,6 +48,9 @@ body {
 
 .credits {
   text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 .wrapper {
@@ -83,6 +86,8 @@ footer {
 }
 .new-blog-button {
   background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 #github {
   background-color: transparent;
@@ -97,7 +102,4 @@ footer {
 }
 #edit-icon:hover {
   color: black;
-}
-#preview-img {
-  height: 100px;
 }
