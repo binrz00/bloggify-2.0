@@ -70,3 +70,6 @@ We named our application Bloggify prior to learning that a site called Bloggify 
 <br>This is Bloggify 2.0. It is simply a group project assignment for our Coding Boot Camp and is not intended for commercial use. 
 <br>
 This application was created for educational purposes only.
+<img src="/public/images/index.png">
+<img src="/public/images/show.png">
+<img src="/public/images/login.png">
