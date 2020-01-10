@@ -1,16 +1,23 @@
 <%- include("./partials/headerNoLogin") %>
-<div class="ui main text container segment">
-    <div class="ui header">Sign Up</div>
-    <form class="ui form" id="signup" name="signup" method="post" action="/signup">
-        <div class="field">
-            <label>Username</label>
-            <input type="text" name="username" placeholder="username">
+<div class="ui center aligned grid">
+    <div class="left aligned six wide column">
+        <h2 class="ui header">Sign Up</h2>
+    
+            <form class="ui form" id="signup" name="signup" method="post" action="/signup">
+            <div class="field">
+                <h3>User Name</h3>
+                <input type="text" name="username" placeholder="User Name" required>
+            </div>
+            <div class="field">
+                <h3>Password</h3>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>     
+            <div class="ui grid">
+                <div class=" right floated four wide column">
+                    <input class="ui green button" type="submit">
+                 </div> 
+                </div> 
+            </form>
+         </div>
         </div>
-        <div class="field">
-            <label>Password</label>
-            <input type="password" name="password" placeholder="password">
-        </div>
-        <input class="ui green button" type="submit">
-    </form>
-</div>
 <%- include("./partials/footer") %>

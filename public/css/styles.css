@@ -55,6 +55,7 @@ body {
 
 .wrapper {
   min-height: 100%;
+  margin-bottom: -50%;
 }
 .push {
   height: 50px;
@@ -102,4 +103,7 @@ footer {
 }
 #edit-icon:hover {
   color: black;
+}
+#edit-post-button {
+  margin-bottom: 3em;
 }
