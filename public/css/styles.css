@@ -92,12 +92,11 @@ footer {
 }
 #edit-icon {
   color: rgba(0, 0, 0, 0.637);
+  position: relative;
+  top: 25%;
 }
 #edit-icon:hover {
   color: black;
-}
-#bump {
-  padding-top: 1%;
 }
 #preview-img {
   height: 100px;
