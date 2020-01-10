@@ -1,23 +1,16 @@
-<%- include("./partials/header") %>
-<div class="center aligned ui grid">
-    <div class="row">
-        <div class="five wide column">
-            <h2>User Name</h2>
-            <div class="ui fluid action input">
-                <input type="text" id="userName" placeholder="Enter your user name here">
-            </div>
+<%- include("./partials/headerNoLogin") %>
+<div class="ui main text container segment">
+    <div class="ui header">Login</div>
+    <form class="ui form" action="/login" method="POST">
+        <div class="field">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="password">
         </div>
-    </div>
-    <div class="row">
-        <div class="five wide column">
-            <h2>Password</h2>
-            <div class="ui fluid action input">
-                <input type="text" id="password" placeholder="Enter your password here">
-            </div>
+        <div class="field">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="password">
         </div>
-    </div>
-    <button id="login-submit" class="center aligned ui button">
-        Log in
-    </button>
+        <input class="ui green button" type="submit">
+    </form>
 </div>
 <%- include("./partials/footer") %>
