@@ -86,6 +86,8 @@ footer {
 }
 .new-blog-button {
   background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 #github {
   background-color: transparent;
