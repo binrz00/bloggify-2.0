@@ -26,7 +26,12 @@ The api routes currently utilize get, push, post and delete methods in orders to
 ## Deployment
 
 Front and back end components were developed by separate teams and integrated using the EJS (Embedded Javascript) npm. 
-The application is deployed via Heroku: (**link to be added**)
+<br>
+The application is deployed via Heroku: [Bloggify 2.0](https://handsome-gentlemen-blogify.herokuapp.com/signup)
+
+## Screenshots
+
+
 
 ## Built With
 Semantic UI - The web framework used
@@ -54,6 +59,8 @@ Our Instructor and TAs with Trilogy Education Services Coding Bootcamp assisted 
 
 ## Challenges
 Back End: Tasks requiring the most troubleshooting included both ensuring the API routes and MySQL database interacted successfully and, once the application ran successfully, incorporating user authentication.
+<br>
+Front End: Linking forms to backend code, and converting HTML to EJS syntax.
 
 
 ## Versioning
