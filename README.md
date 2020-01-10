@@ -30,9 +30,9 @@ Front and back end components were developed by separate teams and integrated us
 The application is deployed via Heroku: [Bloggify 2.0](https://handsome-gentlemen-blogify.herokuapp.com/signup)
 
 ## Screenshots
+<img src="/public/images/login.png">
 <img src="/public/images/index.png">
 <img src="/public/images/show.png">
-<img src="/public/images/login.png">
 
 ## Built With
 Semantic UI - The web framework used
