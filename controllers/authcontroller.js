@@ -18,6 +18,7 @@ authExports.blogs = function(req, res) {
 authExports.createBlogs = function(req, res) {
   req.body.blog.body = req.sanitize(req.body.blog.body);
   db.Blog.create({
+    author: req.body.blog.author,
     title: req.body.blog.title,
     image: req.body.blog.image,
     body: req.body.blog.body
@@ -47,6 +48,7 @@ authExports.updateBlog = function(req, res) {
   db.Blog.findOne({ where: { id: req.params.id } }).then(updatedBlog => {
     updatedBlog
       .update({
+        author: req.body.blog.author,
         title: req.body.blog.title,
         image: req.body.blog.image,
         body: req.body.blog.body
@@ -59,7 +61,7 @@ authExports.updateBlog = function(req, res) {
 
 authExports.deleteBlog = function(req, res) {
   db.Blog.destroy({ where: { id: req.params.id } }).then(() => {
-    res.redirect("/");
+    res.redirect("/blogs");
   });
 };
 

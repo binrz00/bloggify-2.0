@@ -6,7 +6,7 @@
         <div class="four wide column">
             <div class="ui card">
                 <div class="image">
-                    <img id="preview-img" src="<%= blog.image %>">
+                    <img src="<%= blog.image %>">
                 </div>
                 <div class="content">
                     <a class="header" href="/blogs/<%= blog.id %>"><%= blog.title %></a>
@@ -17,7 +17,7 @@
                         <p><%- blog.body.substring(0, 100) %>...</p>
                     </div>
                     <div class="description">
-                        <p><%= blog.author %></p>
+                        <p>By: <%= blog.author %></p>
                     </div>
                 </div>
                 <div class="extra content">
