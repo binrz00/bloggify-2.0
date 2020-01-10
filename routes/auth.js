@@ -15,7 +15,7 @@ module.exports = {
       })
     );
 
-    app.get("/blogs", this.isLoggedIn, authController.blogs);
+    app.get("/blogs", authController.blogs);
     app.post("/blogs", this.isLoggedIn, authController.createBlogs);
     app.get("/blogs/new", this.isLoggedIn, authController.newBlog);
     app.get("/blogs/:id", this.isLoggedIn, authController.showBlog);
