@@ -1,20 +1,103 @@
-.ui.menu {
-  height: 7em;
-}
-
-.ui.menu .item:before {
-  width: 0px;
-}
-
-.ui.huge.header {
-  margin-top: 7em;
-}
-
-.ui.main.container {
-  margin-top: 14em;
-  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
-}
-
 .ui.card {
   box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
+}
+.title {
+  background-color: #c06014;
+}
+.logo {
+  height: 92px;
+  position: absolute;
+  top: 0%;
+  left: 5%;
+}
+h1 {
+  color: whitesmoke;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#navbar {
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#navbar:hover {
+  background-color: black;
+}
+
+body {
+  background-color: #eddbcd;
+}
+
+.vertically {
+  border: 1px solid #cfbfb4;
+  border-radius: 3px;
+}
+#postButton:hover {
+  cursor: pointer;
+}
+
+.post-title {
+  color: black;
+  font-size: 35px;
+}
+
+.credits {
+  text-align: center;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+.push {
+  height: 50px;
+}
+
+#login-submit {
+  background-color: #c06014;
+  color: white;
+}
+
+#login-submit:hover {
+  background-color: black;
+  color: white;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  background-color: rgb(219, 185, 100);
+  color: black;
+  border-top: solid 4px blanchedalmond;
+}
+.random {
+  position: relative;
+  left: 15%;
+}
+.new-blog-button {
+  background-color: transparent;
+}
+#github {
+  background-color: transparent;
+}
+#delete-icon {
+  background-color: transparent;
+}
+#edit-icon {
+  color: rgba(0, 0, 0, 0.637);
+  position: relative;
+  top: 25%;
+}
+#edit-icon:hover {
+  color: black;
+}
+#preview-img {
+  height: 100px;
 }

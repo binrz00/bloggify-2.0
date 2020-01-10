@@ -1,23 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Blog App</title>
+    <!DOCTYPE html>
+<html lang="en-us">
 
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
-        <link rel="stylesheet" type="text/css" href="/css/styles.css">
-    </head>
-    <body>
-        <div class="ui large top fixed inverted menu">
-            <div class="ui container">
-                <a class="item"> Blogify 2.0</a> 
-                <a class="item" href="/">Home</a>
-                <a class="item" href="/blogs/new">New Blog Post</a>
-                <div class="right menu">
-                    <div class="item"><a class="ui button inverted">Log in</a></div>
-                    <div class="item"><a class="ui primary button inverted">Sign Up</a></div>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Bloggify 2.0</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+   <div class="ui equal width center aligned padded grid">
+      <div class="column title">
+          <img class = "logo" src="/images/logo.png"></img>
+          <div class="ui secondary menu navbar">
+            <div class="right menu">
+              <div class="item">
+                <a href="/" class="ui item button" id="navbar">
+                  Home
+                </a>
+              </div>
             </div>
+            <div class="right menu">
+              <div class="item">
+                <a href="/blogs/new" class="ui item button" id="navbar">
+                  New Post
+                </a>
+              </div>
+            </div>
+            <div class="right menu">
+              <div class="item">
+                <a href="/signup" class="ui item button" id="navbar">
+                  Sign Up
+                </a>
+              </div>
+            </div>
+            <div class="right menu">
+              <div class="item">
+                <a href="/login" class="ui item button" id="navbar">
+                  Log-in
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <br>
