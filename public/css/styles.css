@@ -55,6 +55,7 @@ body {
 
 .wrapper {
   min-height: 100%;
+  margin-bottom: -50px;
 }
 .push {
   height: 50px;
