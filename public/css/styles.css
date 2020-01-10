@@ -104,3 +104,6 @@ footer {
 #edit-icon:hover {
   color: black;
 }
+#edit-post-button {
+  margin-bottom: 3em;
+}
